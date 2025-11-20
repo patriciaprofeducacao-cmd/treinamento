@@ -1,0 +1,145 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPbst2VsNPRdvZjC5Ty6ju6",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/patriciaprofeducacao-cmd/treinamento/blob/main/Lista%20de%20Compra%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Lista de compra exercicio 1"
+      ],
+      "metadata": {
+        "id": "kvFQqSnYsGWq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Lista organizada por categorias\n",
+        "\n",
+        "frutas = [\n",
+        "    \"Maçã\", \"Banana\", \"Uva\", \"Morango\", \"Laranja\",\n",
+        "    \"Abacaxi\", \"Melancia\", \"Manga\", \"Pera\", \"Kiwi\"\n",
+        "]\n",
+        "\n",
+        "comidas = [\n",
+        "    \"Arroz\", \"Feijão\", \"Macarrão\", \"Carne\", \"Frango\",\n",
+        "    \"Ovos\", \"Pão\", \"Queijo\", \"Manteiga\", \"Batata\"\n",
+        "]\n",
+        "\n",
+        "bebidas = [\n",
+        "    \"Água\", \"Suco\", \"Café\", \"Leite\", \"Refrigerante\",\n",
+        "    \"Chá\", \"Achocolatado\", \"Água com gás\", \"Energético\", \"Vitamina\"\n",
+        "]\n",
+        "\n",
+        "print(\"==============================================\")\n",
+        "print(\"               LISTA DE COMPRAS               \")\n",
+        "print(\"==============================================\")\n",
+        "\n",
+        "print(\"\\n>>> FRUTAS:\")\n",
+        "print(\"----------------------------------------------\")\n",
+        "for item in frutas:\n",
+        "    print(f\"- {item}\")\n",
+        "\n",
+        "print(\"\\n>>> COMIDAS:\")\n",
+        "print(\"----------------------------------------------\")\n",
+        "for item in comidas:\n",
+        "    print(f\"- {item}\")\n",
+        "\n",
+        "print(\"\\n>>> BEBIDAS:\")\n",
+        "print(\"----------------------------------------------\")\n",
+        "for item in bebidas:\n",
+        "    print(f\"- {item}\")\n",
+        "\n",
+        "print(\"\\n==============================================\")\n",
+        "print(\"Total de itens:\", len(frutas) + len(comidas) + len(bebidas))\n",
+        "print(\"==============================================\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6YmHAvapsK2O",
+        "outputId": "96a7fb49-fc65-4a57-da2a-cb48a79f0fee"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "==============================================\n",
+            "               LISTA DE COMPRAS               \n",
+            "==============================================\n",
+            "\n",
+            ">>> FRUTAS:\n",
+            "----------------------------------------------\n",
+            "- Maçã\n",
+            "- Banana\n",
+            "- Uva\n",
+            "- Morango\n",
+            "- Laranja\n",
+            "- Abacaxi\n",
+            "- Melancia\n",
+            "- Manga\n",
+            "- Pera\n",
+            "- Kiwi\n",
+            "\n",
+            ">>> COMIDAS:\n",
+            "----------------------------------------------\n",
+            "- Arroz\n",
+            "- Feijão\n",
+            "- Macarrão\n",
+            "- Carne\n",
+            "- Frango\n",
+            "- Ovos\n",
+            "- Pão\n",
+            "- Queijo\n",
+            "- Manteiga\n",
+            "- Batata\n",
+            "\n",
+            ">>> BEBIDAS:\n",
+            "----------------------------------------------\n",
+            "- Água\n",
+            "- Suco\n",
+            "- Café\n",
+            "- Leite\n",
+            "- Refrigerante\n",
+            "- Chá\n",
+            "- Achocolatado\n",
+            "- Água com gás\n",
+            "- Energético\n",
+            "- Vitamina\n",
+            "\n",
+            "==============================================\n",
+            "Total de itens: 30\n",
+            "==============================================\n"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPZclI3CNLKnEqTu9pMaW3s",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/patriciaprofeducacao-cmd/treinamento/blob/main/Treinamento%20FM2S\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Calculo da nota"
+      ],
+      "metadata": {
+        "id": "XxWlsiRRPhiS"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota = 8\n",
+        "\n",
+        "if nota >= 7:\n",
+        "    print(\"Aprovado\")\n",
+        "elif nota >= 5:\n",
+        "    print(\"Recuperação\")\n",
+        "else:\n",
+        "    print(\"Reprovado\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "n_rBKeOiPmRf",
+        "outputId": "f64c9f27-8a37-4b54-a694-e7e491d63920"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Aprovado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if True:\n",
+        "    print(\"Bloco dentro do if\")  # Indentado\n",
+        "print(\"Fora do bloco\")           # Sem indentação\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NSJeyI0FcMaZ",
+        "outputId": "ec96350e-a327-497a-cc45-79af113fc132"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Bloco dentro do if\n",
+            "Fora do bloco\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "contador = 0\n",
+        "\n",
+        "while contador < 5:\n",
+        "    print(\"Contador:\", contador)\n",
+        "    contador += 1\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "t5g4wMuXcOuL",
+        "outputId": "583f01a0-9f02-4046-e22d-588c53fb915e"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Contador: 0\n",
+            "Contador: 1\n",
+            "Contador: 2\n",
+            "Contador: 3\n",
+            "Contador: 4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numeros = {1: 'um', 2: 'dois', 3: 'três'}\n",
+        "print(numeros[2])  # Saída: dois\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "J1X_S3aBcXBX",
+        "outputId": "5eb38a60-65df-4a0b-d2c6-550e618c73a4"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "dois\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "frutas = [\"maçã\", \"banana\", \"uva\"]\n",
+        "\n",
+        "for indice, fruta in enumerate(frutas):\n",
+        "    print(indice, fruta)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2I0DyQuucc3N",
+        "outputId": "8b4c4072-7685-4a51-ab9b-f5728927f808"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0 maçã\n",
+            "1 banana\n",
+            "2 uva\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Olá, mundo!\")\n",
+        "print(2 + 2)\n",
+        "nome = \"Patrícia\", \"Marcela\", \"Camila\",\" Paula \"\n",
+        "print(\"Bem-vinda,\", nome)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1BUu75AQfu3b",
+        "outputId": "742ba7d9-aece-4bce-b7d8-edc5dd2c4b42"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá, mundo!\n",
+            "4\n",
+            "Bem-vinda, ('Patrícia', 'Marcela', 'Camila', ' Paula ')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota = 8\n",
+        "if nota >= 7 :\n",
+        "    print(\"Aprovado\")\n",
+        "elif nota >= 5:\n",
+        "    print(\"Recuperação\")\n",
+        "else:\n",
+        "    print(\"Reprovado\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1qqwTwyKgoSy",
+        "outputId": "19af4d8d-1bd1-4bc7-9a4c-a97baf778637"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Aprovado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "XrkpRgspgo2y"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}

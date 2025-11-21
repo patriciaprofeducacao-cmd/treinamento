@@ -1,0 +1,72 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNtbHM9Zty1x61zk0k+VGRm"
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "DkoOV5m7u4KY"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Lista de compra 2"
+      ],
+      "metadata": {
+        "id": "a98JsOLtu8j6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "frutas = [\n",
+        "    \"Maçã\", \"Banana\", \"Uva\", \"Morango\", \"Laranja\",\n",
+        "    \"Abacaxi\", \"Melancia\", \"Manga\", \"Pera\", \"Kiwi\"\n",
+        "]\n",
+        "\n",
+        "comidas = [\n",
+        "    \"Arroz\", \"Feijão\", \"Macarrão\", \"Carne\", \"Frango\",\n",
+        "    \"Ovos\", \"Pão\", \"Queijo\", \"Manteiga\", \"Batata\"\n",
+        "]\n",
+        "\n",
+        "bebidas = [\n",
+        "    \"Água\", \"Suco\", \"Café\", \"Leite\", \"Refrigerante\",\n",
+        "    \"Chá\", \"Achocolatado\", \"Água com gás\", \"Energético\", \"Vitamina\"\n",
+        "]\n",
+        "\n",
+        "# Cabeçalho\n",
+        "print(\"==============================================================\")\n",
+        "print(f\"{'FRUTAS':<20} | {'COMIDAS':<20} | {'BEBIDAS':<20}\")\n",
+        "print(\"==============================================================\")\n",
+        "\n",
+        "# Criar tabela linha por linha\n",
+        "for f, c, b in zip(frutas, comidas, bebidas):\n",
+        "    print(f\"{f:<20} | {c:<20} | {b:<20}\")\n",
+        "\n",
+        "print(\"==============================================================\")\n",
+        "print(\"Total de itens:\", len(frutas) + len(comidas) + len(bebidas))\n",
+        "print(\"==============================================================\")\n"
+      ],
+      "metadata": {
+        "id": "FNC_u5Zsy-6f"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}

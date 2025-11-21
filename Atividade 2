@@ -1,0 +1,152 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyOEzc38MD9931CR01ueUYRn",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/patriciaprofeducacao-cmd/treinamento/blob/main/Atividade%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "DkoOV5m7u4KY"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Lista de compra 2"
+      ],
+      "metadata": {
+        "id": "a98JsOLtu8j6"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "1LGz6mwhLoi4"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "exercicios 2"
+      ],
+      "metadata": {
+        "id": "t9KgAquLLsF_"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "frutas = [\n",
+        "    (\"Maçã\", 4.50),\n",
+        "    (\"Banana\", 3.20),\n",
+        "    (\"Uva\", 7.80),\n",
+        "    (\"Morango\", 9.90),\n",
+        "    (\"Laranja\", 4.00),\n",
+        "    (\"Abacaxi\", 6.50),\n",
+        "    (\"Melancia\", 12.00),\n",
+        "    (\"Manga\", 5.30),\n",
+        "    (\"Pera\", 6.10),\n",
+        "    (\"Kiwi\", 8.00)\n",
+        "]\n",
+        "\n",
+        "comidas = [\n",
+        "    (\"Arroz\", 25.90),\n",
+        "    (\"Feijão\", 8.50),\n",
+        "    (\"Macarrão\", 5.40),\n",
+        "    (\"Carne\", 32.00),\n",
+        "    (\"Frango\", 18.90),\n",
+        "    (\"Ovos\", 16.00),\n",
+        "    (\"Pão\", 8.00),\n",
+        "    (\"Queijo\", 22.50),\n",
+        "    (\"Manteiga\", 11.70),\n",
+        "    (\"Batata\", 4.99)\n",
+        "]\n",
+        "\n",
+        "bebidas = [\n",
+        "    (\"Água\", 2.00),\n",
+        "    (\"Suco\", 6.90),\n",
+        "    (\"Café\", 12.50),\n",
+        "    (\"Leite\", 5.20),\n",
+        "    (\"Refrigerante\", 8.40),\n",
+        "    (\"Chá\", 4.80),\n",
+        "    (\"Achocolatado\", 6.10),\n",
+        "    (\"Água com gás\", 3.50),\n",
+        "    (\"Energético\", 9.90),\n",
+        "    (\"Vitamina\", 7.00)\n",
+        "]\n",
+        "\n",
+        "print(\"==============================================================================\")\n",
+        "print(f\"{'FRUTAS':<20} | {'PREÇO':<8} | {'COMIDAS':<20} | {'PREÇO':<8} | {'BEBIDAS':<20} | {'PREÇO':<8}\")\n",
+        "print(\"==============================================================================\")\n",
+        "\n",
+        "for (f, pf), (c, pc), (b, pb) in zip(frutas, comidas, bebidas):\n",
+        "    print(f\"{f:<20} | R$ {pf:<5.2f} | {c:<20} | R$ {pc:<5.2f} | {b:<20} | R$ {pb:<5.2f}\")\n",
+        "\n",
+        "print(\"==============================================================================\")\n",
+        "total = sum(price for _, price in frutas + comidas + bebidas)\n",
+        "print(f\"Total de itens: {len(frutas) + len(comidas) + len(bebidas)}\")\n",
+        "print(f\"Valor total estimado da compra: R$ {total:.2f}\")\n",
+        "print(\"==============================================================================\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "G0uJtGuvNRAP",
+        "outputId": "183ba72e-621d-4e15-ad9e-31d9bfe73443"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "==============================================================================\n",
+            "FRUTAS               | PREÇO    | COMIDAS              | PREÇO    | BEBIDAS              | PREÇO   \n",
+            "==============================================================================\n",
+            "Maçã                 | R$ 4.50  | Arroz                | R$ 25.90 | Água                 | R$ 2.00 \n",
+            "Banana               | R$ 3.20  | Feijão               | R$ 8.50  | Suco                 | R$ 6.90 \n",
+            "Uva                  | R$ 7.80  | Macarrão             | R$ 5.40  | Café                 | R$ 12.50\n",
+            "Morango              | R$ 9.90  | Carne                | R$ 32.00 | Leite                | R$ 5.20 \n",
+            "Laranja              | R$ 4.00  | Frango               | R$ 18.90 | Refrigerante         | R$ 8.40 \n",
+            "Abacaxi              | R$ 6.50  | Ovos                 | R$ 16.00 | Chá                  | R$ 4.80 \n",
+            "Melancia             | R$ 12.00 | Pão                  | R$ 8.00  | Achocolatado         | R$ 6.10 \n",
+            "Manga                | R$ 5.30  | Queijo               | R$ 22.50 | Água com gás         | R$ 3.50 \n",
+            "Pera                 | R$ 6.10  | Manteiga             | R$ 11.70 | Energético           | R$ 9.90 \n",
+            "Kiwi                 | R$ 8.00  | Batata               | R$ 4.99  | Vitamina             | R$ 7.00 \n",
+            "==============================================================================\n",
+            "Total de itens: 30\n",
+            "Valor total estimado da compra: R$ 287.49\n",
+            "==============================================================================\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
